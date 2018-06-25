@@ -3,137 +3,113 @@
 	margin: 0;
 	padding: 0;
 }
-:root {
+/*:root {
 	--blue: #39add1;
-}
+}*/
 html {
 	font-family: sans-serif;
+	font-size: 15px;
 }
 ul {
 	list-style-type: none;
 }
+img{
+	border-radius: 50%
+	   max-width: 100%;
+    height: auto;
+}
+body {
+	opacity: 3;
+  
+   /*background-image: url("../images/glacier.jpg");*/
+   background-size: 100%;
+   background-color: black;
+}
+.container{
+	margin: 0 auto;
+	display: grid;
+	 grid-column-gap: 50px;
+	width: 1000px;
+	  font: 15px arial, sans-serif;
 
-.card,
-.new-card {
-	border: 1px solid var(--blue);
-	border-radius: 1rem;
+}
+
+main{
 	display: grid;
-	flex-basis: calc(33% - 2rem);
-	grid-template-columns: 8fr 2fr;
-	margin: 1rem;
-	padding: 1rem;
+	grid-template-columns: 30% 40% 30%;
+	grid-column-gap: 50px;
+	min-height: 90vh;
 }
-.card > footer,
-.card > header {
-	grid-column: 1/-1;
+
+.bio{
+	color: white;
+	background-color: gray;
+	border-style:solid;
+	border-radius: 20px;
+	border-color: white;
+	border-width: .5rem;
+	float: left;
+	padding: 2rem 5rem 7rem .5rem;
+	text-align: left;
+	font-size: 20px;
+	margin-top: .4rem;
+
 }
-.card > header {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-}
-.card > header button {
-	align-self: flex-start;
-	border: none;
-	cursor: pointer;
-	font-size: 2rem;
-	line-height: 0;
-	transform: rotateZ(45deg);
-}
-.card > header button:focus {
-	outline: none;
-}
-.card > main p {
-	margin: 1rem 0;
-}
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-}
-.container {
-	display: grid;
-	grid-template-columns: 0.7fr 0.3fr;
-	grid-template-rows: 100px auto 200px;
-	min-height: 100vh;
-}
-.container > aside {
-	display: flex;
-	grid-column: -2/-1;
-	margin: 1rem;
-}
-.container > footer,
-.container > header {
-	grid-column: 1/-1;
-}
-.container > footer {
-	align-items: center;
-	border-top: 1px solid var(--blue);
-	display: flex;
-	justify-content: center;
-}
-.container > header {
-	align-items: center;
-	border-bottom: 1px solid var(--blue);
-	display: flex;
-	justify-content: space-between;
-}
-.container > header h1 {
-	margin-left: 1rem;
-}
-.container > header nav {
-	margin-right: 1rem;
-	position: relative;
-}
-.container > header nav ul {
-	background-color: white;
-	display: none;
-	left: -47px;
-	position: absolute;
-}
-.container > header nav ul li {
+
+h1{
 	margin-top: 1rem;
+text-align: center;
+color: white;
+ border-style: none;
+ font-style: sans-serif
 }
-.container > header nav ul li a {
-	color: var(--blue);
-	padding: 0.5rem 1rem;
-	text-decoration: none;
+.social{
+	background-color: gray;
+	border-style: solid;
+	padding: 2rem .5rem 10rem .5rem;
+	text-align: center;
+	color: white;
+	font-size: 20px;
 }
-.container > header nav ul li.active a {
-	background-color: var(--blue);
+.news-feed{
+	border-style: ridge;
+	border-width: .2rem;
+	background-color: gray;
+	color: white;
+	float:right;
+	text-align: right;
+	margin-top: 2rem;
+}
+.news-feed figure{
+	width: 100px;
+	border-radius: 50%;
+	float: center;
+
+}
+
+.navigation{
+	text-align: center;
+	list-style-type: block;
+}
+.closing{
+	text-align: center;
+	border-style: hidden;
 	color: white;
 }
-.container > header nav ul li:first-child {
-	margin-left: 0;
+.hero-text{
+	text-align: center;
+	color: white;
+	margin-top: .2rem
+	margin-bottom: .2rem;
+	border-style: ridge;
+	min-height: 30vh;
+	min-width: 100%;
+	
 }
-.container > main {
-	grid-column: 1/2;
-}
-.nav-menu {
-	border: none;
-	color: var(--blue);
-	cursor: pointer;
-	padding: 0.5em;
-}
-.new-card * {
-	margin-bottom: 1rem;
-}
-.new-card input,
-.new-card textarea {
-	border: 1px solid var(--blue);
-	display: block;
-	padding: 0.25rem;
-	width: 100%;
-}
-.new-card form {
-	grid-column: 1 / -1;
-}
-.news-feed-card {
-	border: 1px solid var(--blue);
-	border-radius: 1rem;
-	margin: 1rem 0;
-	padding: 1rem;
-}
-.news-feed-card:first-child {
-	border: 1px solid var(--blue);
-	margin-top: 0;
+.hero-image{
+	background-image: url("../images/space.jpg");
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
 }
