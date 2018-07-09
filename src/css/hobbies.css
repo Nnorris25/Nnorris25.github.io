@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+  min-height: 100vh;
+background-image: url("../images/wood.jpg");
+}
+.containerTwo{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-family:   "Palatino Linotype", "Book Antiqua", Palatino, serif
+	
+}
+.collapsible{
+	padding-right: .2rem;
+}
+.carousel-description{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border-style: solid;
+	border-color: black;
+	border-width: .5rem;
+	background-color: grey;
+	padding: 2rem 5rem 3rem .5rem;
+	margin-top: 2rem
+	margin-bottom: .2rem;
+	min-height: 30vh;
+	min-width: 100%
+	font-size: 25px;
+	text-align: center;
+}
+.Fortune{
+	display: inline-flex;
+	justify-content: center;
+	font-size: 30px;
+	color: black;
+	margin-right: 5rem;
+	padding: 2rem 5rem 3rem .5rem;
+	font-family:   "Palatino Linotype", "Book Antiqua", Palatino, serif
+
+	
+}
+.Virtual{
+display: inline-flex;
+justify-content: center;
+font-size: 30px;
+margin-right: 5rem;
+margin-top: 2rem;
+font-family:   "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+.Review{
+display: inline-flex;
+justify-content: center;
+font-size: 30px;
+color: black;
+margin-top: 2rem;
+margin-bottom: 2rem;
+font-family:   "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+.selfie{
+	
+	display: flex;
+	justify-content: center;
+}
+.carousel{
+	align-items: center;
+margin-bottom: 2rem;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+	border-style: solid;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

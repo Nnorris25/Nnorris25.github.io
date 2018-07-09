@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jasmine Testing Exercise</title>
     <link rel="stylesheet" href="./src/css/styles.css">
-</head>
-<body>
-
-</div>
+  </head>
+  <body>
+    </div>
     <div class="container">
-        <header>
-        <div class="hero-image">
-  <div class="hero-text">
-    <h1>I am Nathaniel I. Norris</h1>
-    <p>A young coder and a young dreamer</p>
-  </div>
-  </div>
-        </header>
-        <main>
-            
-            <section class="social">
-                    <form>
-                        <p>Make sure to add me on all these social media platforms and check out my github page</p>
-                       <!--   <label>Title: <input type="text"></label>
-                        <label>Content:</label>
-                        <textarea cols="30" rows="10"></textarea>
-                        <input type="submit"> 
- -->                    </form>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="https://github.com/Nnorris25">GitHub</a></li>
-                        </ul>
-                    </aside>
-                </section>
-            
-               <section class="bio">
-                    <h2>My Lovely Biography</h2>                  
-                        <p>I was born a legend on December 20th, 1995 in the great city of Columbus, Ohio.<br> The creators of this legend go by the names of Gada McMahen who is originally from Amman, Jordan and Thomas Norris, a Columbus native. I am currently attending school at We Can Code IT where i am learning(trying to learn) software development.</p>
-               </section>
-                                    <!-- <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside> -->
-                    
-                
-        <aside>
-            <section class="news-feed">
-                <figure>
-                    <img src="./src/images/selfie.jpg" height="100%" width="100%" />
-                </figure>
-                <section class="news-feed-card">
-                    <p>Phone Number: 406-890-3734</p>
-                </section>
-                <section class="news-feed-card">
-                    <p>Email: Nathaniel.Norris25@gmail.com</p>
-                </section>
-                <section class="news-feed-card">
-                    <p>Fax Number : People still fax?</p>
-                </section>
-            </section>
-        </aside>
-        </main>
-        
-        <footer class = "closing">
-                        <a href="#">Read More...</a>
-                    <small>&copy;2018</small>
-        </footer>
-     </div>
+    <header>
+      <div class="dropdown">
+        <button class="dropbtn">Follow Me</button>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://github.com/Nnorris25">Github</a>
+        </div>
+      </div>
+      <button class="dropbtn2">
+      <a href="./social.html">Hobbies
+      </a> 
+      </button>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>I am Nathaniel I. Norris</h1>
+          <h2>Coder and Founder of Handcrest</h2>
+          <button id="wannaChatButton">Wanna Chat?</button> 
+          <p>
+            Phone Number: 406-890-3734<br>
+            Email: Nathaniel.Norris25@gmail.com<br>
+            Fax Number : People still fax?<br>
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bio">
+        <h1>Learn About Me</h1>
+        <button id="open-modal">Click Me</button>
+        <div id="modal-screen">
+        <div id="modal-box">
+          <h1>My Lovely Bio</h1>
+          <p>I was born a legend on December 20th, 1995 in the great city of Columbus, Ohio.<br> The creators of this legend go by the names of Gada McMahen who is originally from Amman, Jordan and Thomas Norris, a Columbus native. I am currently attending school at We Can Code IT where i am learning(trying to learn) software development.</p>
+          <button id="close-modal">Close</button>  
+      </section>
+    </main>
+    <footer class = "closing">
+    <!--  <a href="#">Read More...</a> -->
+    <small>Handcrest LLC</small>
+    <small>&copy;2018</small>
+    </footer>
+    </div>
     <script src="./src/js/app.js"></script>
-</body>
+  </body>
 </html>
